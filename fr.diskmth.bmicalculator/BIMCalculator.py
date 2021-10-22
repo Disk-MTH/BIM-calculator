@@ -13,11 +13,8 @@ def calculate_bmi():
         weight = get_weight()
         bmi = weight / (height ** 2)
 
-        if height < 0 :
-            messagebox.showinfo("Error :", "Negative height !")
-
-        if weight < 0 :
-            messagebox.showinfo("Error :", "Negative weight !")
+        if height < 0 or weight < 0 :
+            messagebox.showinfo("Error :", "Negative height or weight !")
 
         else :
             messagebox.showinfo("Your BMI calculated is : ", bmi)
